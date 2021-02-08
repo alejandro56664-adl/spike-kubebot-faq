@@ -1,13 +1,23 @@
 # spike-kubebot-faq
 Kubebot-faq es un bot para slack que ayuda a entender y resolver problemas con despliegues en kubernetes. Es un spike para explorar el potencial de la herramienta Neo4j con base de datos de conocimiento.
 
-# Contenido
+## Contenido
 
-- 1. Introducción
-- 2. Instalación
-- 
+- [1. Introducción](#1-introducción)
+- [2. Instalación](#2-instalación)
+- [3. Arquitectura](#3-arquitectura)
+  - [3.1 Atributos de calidad](#3-1-atributos-de-calidad)
+  - [3.2 Vista lógica](#3-2-vista-lógica)
+  - [3.3 Vista de proceso](#3-3-vista-de-proceso)
+  - [3.4 Vista de desarrollo](#3-4-vista-de-desarrollo)
+  - [3.5 Vista física](#3-5-vista-física)
+  - [3.6 Vista de escenearios](#3-6-vista-de-escenarios)
+  - [3.7 Evaluación arquitectura con ATAM](#3-7-evaluación-arquitectura-con-atam)
+- [4. Conclusión](#4-conclusión)
+- [5. Fuentes](#5-fuentes)
 
-# Introducción
+
+## 1. Introducción
 
 TODO: introducción
 Responder a las preguntas: 
@@ -19,11 +29,11 @@ Responder a las preguntas:
 - ¿Qué consecuencias tiene?
 
 
-# Instalación
+## 2. Instalación
 
-## Creación aplicación en Slack
+### 2.1 Creación aplicación en Slack
 
-## Ejecución en ambiente local
+### 2.2 Ejecución en ambiente local
 
 Una vez clonado el proyecto instale las dependencias:
 
@@ -56,41 +66,51 @@ Para hacer las pruebas remotas con la API de Slack, se usa ngrok, si no lo tiene
 npm install -g ngrok
 ```
 
-## Arquitectura 
+## 3. Arquitectura 
 
-### Atributos de calidad
+### 3.1 Atributos de calidad
 
 - TODO: listar los *ality mas importantes para este producto.
 
-### Vista lógica
+### 3.2 Vista lógica
 - diagrama de clases
+![diagrama de clases](#./doc/assets/v-logica-d-clases.png)
+
 - diagrama de estado
+![diagrama de estado](#./doc/assets/v-logica-d-estado.png)
 
-#### Modelo de datos (Grafo de conocimiento)
+- Modelo de datos (Grafo de conocimiento)
+![modelo de datos](#./doc/assets/modelo-datos.png)
 
-### Vista de proceso
+### 3.3 Vista de proceso
 - diagrama de secuencia
+![diagrama de secuencia](#./doc/assets/v-proceso-d-secuencia.png)
+
 - diagrama de comunicación
+![diagrama de comunicación](#./doc/assets/v-proceso-d-comunicacion.png)
 
-### Vista de desarrollo
+### 3.4 Vista de desarrollo
 - diagrama de componentes
+![diagrama de componentes](#./doc/assets/v-desarrollo-d-componentes.png)
 
-### Vista física
+### 3.5 Vista física
 - diagrama de despliegue asociado a terraform.
+![diagrama de despliegue](#./doc/assets/v-fisica-d-despliegue.png)
 
-### Vista de escenarios
-
+### 3.6 Vista de escenarios
 - casos de uso
+![diagrama de casos de uso](#./doc/assets/v-escenario-d-casos-uso.png)
+
 - user journy map
 
-### Evaluación arquitectura con ATAM
+### 3.7 Evaluación arquitectura con ATAM
 
 Hacer un pequeño analisis de atam, responder con los patrones:
 - Serverless en AWS (well architected framework) con nodejs (escalabilidad) modelo de concurrencia (basado en eventos)
 - Base de datos NoSQL tipo grafos, que ventajas da, que se pierde
 
-## Conclusión
+## 4. Conclusión
 
 TODO: que aporta este spike a la comunidad.
 
-## Fuentes/Referencias
+## 5. Fuentes
