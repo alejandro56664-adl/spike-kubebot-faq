@@ -1,5 +1,5 @@
 # spike-kubebot-faq
-Kubebot-faq es un bot para slack que ayuda a entender y resolver problemas con despliegues en kubernetes. Es un spike para explorar el potencial de la herramienta Neo4j con base de datos de conocimiento.
+Kubebot-faq es un bot que ayuda a entender y resolver problemas con despliegues en kubernetes. Es un spike para explorar el potencial de la herramienta Neo4j con base de datos de conocimiento.
 
 ## Contenido
 
@@ -74,32 +74,34 @@ npm install -g ngrok
 
 ### 3.2 Vista lógica
 - diagrama de clases
-![diagrama de clases](#./doc/assets/v-logica-d-clases.png)
+![diagrama de clases](./docs/assets/diagramas-v-logica-d-clases.png)
 
 - diagrama de estado
-![diagrama de estado](#./doc/assets/v-logica-d-estado.png)
+![diagrama de estado](./docs/sassets/diagramas-v-logica-d-estado.png)
 
 - Modelo de datos (Grafo de conocimiento)
-![modelo de datos](#./doc/assets/modelo-datos.png)
+![modelo de datos](./docs/assets/modelo-datos.png)
 
 ### 3.3 Vista de proceso
 - diagrama de secuencia
-![diagrama de secuencia](#./doc/assets/v-proceso-d-secuencia.png)
+![diagrama de secuencia](./docs/assets/diagramas-v-proceso-d-secuencia.png)
 
 - diagrama de comunicación
-![diagrama de comunicación](#./doc/assets/v-proceso-d-comunicacion.png)
+![diagrama de comunicación](./docs/assets/diagramas-v-proceso-d-comunicacion.png)
 
 ### 3.4 Vista de desarrollo
 - diagrama de componentes
-![diagrama de componentes](#./doc/assets/v-desarrollo-d-componentes.png)
+![diagrama de componentes](./docs/assets/diagramas-v-desarrollo-d-componentes.png)
+
+
 
 ### 3.5 Vista física
 - diagrama de despliegue asociado a terraform.
-![diagrama de despliegue](#./doc/assets/v-fisica-d-despliegue.png)
+![diagrama de despliegue](./docs/assets/diagramas-v-fisica-d-despliegue.png)
 
 ### 3.6 Vista de escenarios
 - casos de uso
-![diagrama de casos de uso](#./doc/assets/v-escenario-d-casos-uso.png)
+![diagrama de casos de uso](./docs/assets/diagramas-v-escenario-d-casos-uso.png)
 
 - user journy map
 
